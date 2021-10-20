@@ -1,0 +1,15 @@
+pyms:
+  services:
+    requests:
+      data: ""
+    tracer:
+      client: "svc"
+      host: "localhost"
+      component_name: "Chat DB"
+  config:
+    DEBUG: true
+    TESTING: true
+    APP_NAME: ss_assignment_01_lets_talk
+    APPLICATION_ROOT : /
+    SECRET_KEY: "nhj78jdh98jsk0"
+    service_host: http://localhost:8081/
