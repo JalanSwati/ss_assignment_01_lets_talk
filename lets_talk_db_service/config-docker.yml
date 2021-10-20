@@ -1,0 +1,18 @@
+pyms:
+  services:
+    swagger:
+      path: "swagger"
+      file: "swagger.yaml"
+    tracer:
+      client: "jaeger"
+      host: "localhost"
+      component_name: "Chat DaaS"
+  config:
+    DEBUG: false
+    TESTING: false
+    APP_NAME: lets_talk_db_service
+    APPLICATION_ROOT : ""
+    SQLALCHEMY_TRACK_MODIFICATIONS: true
+    SECRET_KEY: "nhj78jdh98jsk0"
+    DATABASE: db.sqlite3
+    SQLALCHEMY_DATABASE_URI: sqlite://

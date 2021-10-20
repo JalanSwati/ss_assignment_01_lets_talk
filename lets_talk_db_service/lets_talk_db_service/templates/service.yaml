@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "lets_talk_db_service.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "lets_talk_db_service.name" . }}
+    helm.sh/chart: {{ include "lets_talk_db_service.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: {{ include "lets_talk_db_service.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
