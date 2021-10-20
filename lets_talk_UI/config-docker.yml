@@ -1,0 +1,11 @@
+pyms:
+  services:
+    requests:
+      data: ""
+  config:
+    DEBUG: true
+    TESTING: true
+    APP_NAME: ss-assignment
+    APPLICATION_ROOT : /
+    SECRET_KEY: "nhj78jdh98jsk0"
+    service_host: http://127.0.0.1
