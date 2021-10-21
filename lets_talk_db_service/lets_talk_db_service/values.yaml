@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: chat_db
+  repository: lets_talk_db_service
   tag: v1
   pullPolicy: IfNotPresent
 
