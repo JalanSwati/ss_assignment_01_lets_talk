@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: lets_chat_svc
+  repository: lets_talk_backend
   tag: v1
   pullPolicy: IfNotPresent
 

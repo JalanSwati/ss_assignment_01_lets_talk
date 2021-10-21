@@ -3,9 +3,9 @@ pyms:
     requests:
       data: ""
     tracer:
-      client: "svc"
+      client: "lets_talk_backend"
       host: "localhost"
-      component_name: "Chat DB"
+      component_name: "lets_talk_db_service"
   config:
     DEBUG: false
     TESTING: false
